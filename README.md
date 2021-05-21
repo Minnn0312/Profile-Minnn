@@ -1,5 +1,9 @@
-# 👋
- https://minnn.me
- Personal mini website
+# Xin chào bạn 👋
 
- Copyright (c) 2016 Minnn0312
+ Đây là một website giới thiệu về bản thân mà mình.
+
+ Bạn có thể ghé thăm tại: https://minnn.me
+ 
+ Cảm ơn bạn đã đọc!
+
+ Copyright (c) 2021 Minnn0312
