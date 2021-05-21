@@ -17,13 +17,13 @@
 
 input[type=text]{
   width: 75%;  
-margin: 10px;
+  margin-bottom: 15px;
 } 
 }
 @media (min-width: 1200px) { :root { font-size: 2rem; }
 input[type=text]{
   width: 75%;  
-margin: 10px;
+  margin-bottom: 15px;
 } 
 
 }
