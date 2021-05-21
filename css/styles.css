@@ -49,13 +49,16 @@ body {
   text-align: center;
   padding: 10px;
   color: #FFF;
+  position: fixed;
+  top: 0;
 }
 .messageboxtext {
   margin-top: auto;
 }
 .messages {
+  margin-top: 50px;
   width: 100vw;
-  height: 84vh;
+  height: 85vh;
   padding: 20px 10px;
 	overflow-y: auto; 
 }
