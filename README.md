@@ -1,6 +1,8 @@
 # Xin chào bạn 👋
 
- Đây là một website giới thiệu về bản thân mà mình.
+ Đây là một website giới thiệu về bản thân mình.
+ 
+ Bạn có thể tham khảo về một bản giới thiệu bản thân này
 
  Bạn có thể ghé thăm tại: https://minnn.me
  
