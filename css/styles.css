@@ -23,7 +23,7 @@ input[type=text]{
 @media (min-width: 1200px) { :root { font-size: 2rem; }
 input[type=text]{
   width: 75%;  
-  margin-bottom: 15px;
+  margin-bottom: 15px; /* ad */
 } 
 
 }
