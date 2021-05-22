@@ -50,7 +50,9 @@ body {
   padding: 10px;
   color: #FFF;
   position: fixed;
-  top: 0;
+  /* top: 0; */
+  z-index: 1000;
+  /* position: relative; */
 }
 .messageboxtext {
   margin-top: auto;
