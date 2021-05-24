@@ -16,21 +16,22 @@ window.onload = function() {
     var hours =  date.getHours();
     var minutes =  date.getMinutes();
     var current = hours + (minutes * .01);
-    if (current >= 5 && current < 19) return 'Chúc bạn ngày mới vui vẻ';
-    if (current >= 19 && current < 22) return 'Chúc bạn buổi tối vui vẻ';
-    if (current >= 22 || current < 5) return 'Chúc bạn một đêm ngon giấc';
+    if (current >= 5 && current < 19) return 'Have a nice day';
+    if (current >= 19 && current < 22) return 'Have a nice evening';
+    if (current >= 22 || current < 5) return 'Have a nice sleep';
   }
 
   var messages = [
-    'Xin chào bạn 👋',
-    'Mình là Thắng',
-    'Họ tên là Đỗ Huy Thắng',
-    'Mình là một kỹ sư an toàn thông tin',
-    'Công việc của mình là làm cho hệ thống ổn định và an toàn',
-    'Hiện tại mình đang làm cho một công ty cung cấp chứng thư số công cộng',
-    'Bạn có thể liên hệ mình<br><a target="_blank" href="https://github.com/Minnn0312"><i class="fab fa-github-square"></i> Minnn0312</a><br><a target="_blank" href="https://fb.com/dohuythangglcs"><i class="fab fa-facebook"></i> Đỗ Huy Thắng</a><br><a target="_blank" href="mailto:dohuythang00@gmail.com"><i class="fal fa-mail-bulk"></i> dohuythang00</a>',
+    'Hey there 👋',
+    "I'm Huy Thang",
+    "I'm a infomation technology security engineer",
+    'Besides that, I also a programmer, a cryptography engineer and a system engineer',
+    'My job is to make the system secure and stability',
+    'I have 3 years experience at similar positions',
+    'My hobby is research everything about technology',
+    'You can contact me<br><a target="_blank" href="https://github.com/Minnn0312"><i class="fab fa-github-square"></i> Minnn0312</a><br><a target="_blank" href="https://fb.com/dohuythangglcs"><i class="fab fa-facebook"></i> Đỗ Huy Thắng</a><br><a target="_blank" href="mailto:dohuythang00@gmail.com"><i class="fal fa-mail-bulk"></i> dohuythang00</a>',
     getCurrentTime(),
-    'Cảm ơn bạn đã ghé thăm!'
+    '👀 Minnn.'
   ]
 
   var getFontSize = function() {
