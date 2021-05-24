@@ -127,7 +127,7 @@
     width: 90%;
   }
   .messages {
-    margin-top: 50px;
+    margin: 50px 0;
     width: 100vw;
     height: 90vh;
     padding: 20px 10px;
@@ -139,7 +139,7 @@
   }
 
   input[type=text] {
-    width: 80%;
+    width: 75%;
     margin: 15px 0;
   }
 
@@ -154,7 +154,7 @@
 
   .i-icons-right {
     float: right;
-    margin: 15px 40px 0 0;
+    margin: 15px 45px 0 0;
   }
 }
 
