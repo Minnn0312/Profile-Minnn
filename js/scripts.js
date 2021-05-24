@@ -28,7 +28,7 @@ window.onload = function() {
     'Mình là một kỹ sư an toàn thông tin',
     'Công việc của mình là làm cho hệ thống ổn định và an toàn',
     'Hiện tại mình đang làm cho một công ty cung cấp chứng thư số công cộng',
-    'Bạn có thể liên hệ mình<br><a target="_blank" href="https://github.com/Minnn0312">Github: Minnn0312</a><br><a target="_blank" href="https://fb.com/dohuythangglcs">Facebook: Đỗ Huy Thắng</a><br><a target="_blank" href="mailto:dohuythang00@gmail.com">Email: dohuythang00</a>',
+    'Bạn có thể liên hệ mình<br><a target="_blank" href="https://github.com/Minnn0312"><i class="fab fa-github-square"></i> Minnn0312</a><br><a target="_blank" href="https://fb.com/dohuythangglcs"><i class="fab fa-facebook"></i> Đỗ Huy Thắng</a><br><a target="_blank" href="mailto:dohuythang00@gmail.com"><i class="fal fa-mail-bulk"></i> dohuythang00</a>',
     getCurrentTime(),
     'Cảm ơn bạn đã ghé thăm!'
   ]

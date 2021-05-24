@@ -1,37 +1,171 @@
-:root { font-size: 1.125rem; }
-@media (min-width: 320px) { 
-  :root { font-size: 1.5rem; }
-  input[type=text]{
-    width: 53%;
-    margin-bottom: 15px;
-  } 
+:root {
+  font-size: 1.125rem;
 }
-@media (min-width: 600px) { 
-  :root { font-size: 1.5rem; }
-  input[type=text]{
-    width: 75%;  
-  margin-bottom: 15px;
-  } 
-}
-@media (min-width: 900px) { :root { font-size: 1.75rem; }
 
-input[type=text]{
-  width: 75%;  
-  margin-bottom: 15px;
-} 
-}
-@media (min-width: 1200px) { :root { font-size: 2rem; }
-input[type=text]{
-  width: 75%;  
-  margin-bottom: 20px; /* ad */
-} 
+@media (min-width: 320px) {
+  :root {
+    font-size: 1.5rem;
+  }
+
+  .navigation{
+    padding: 15px 0;
+    }
+  .mes{
+    width: 85%;
+  }
+
+  .nav-left{
+  float: left;
+  margin: 0 20px;
+  }
+
+  .nav-right{
+    float: right;
+    margin: 0 25px;
+  }
+  
+  input[type=text] {
+    width: 50%;
+    margin: 10px 0;
+  }
+
+  .messages {
+    margin-top: 50px;
+    width: 100vw;
+    height: 85vh;
+    padding: 20px 10px;
+    overflow-y: auto;
+  }
+
+  .i-icons {
+    margin: 0 3px;
+  }
+
+  .i-icons-left {
+    float: left;
+    margin: 15px 0 0 15px;
+  }
+
+  .i-icons-right {
+    float: right;
+    margin: 15px 20px 0 0;
+  }
 
 }
-*, *:before, *:after {
+
+@media (min-width: 600px) {
+  :root {
+    font-size: 1.5rem;
+  }
+
+  .navigation{
+    padding: 15px 0;
+    }
+  .mes{
+    width: 90%;
+  }
+  input[type=text] {
+    width: 65%;
+    margin-bottom: 10px;
+  }
+
+  .i-icons {
+    margin: 0 5px;
+  }
+
+  .i-icons-left {
+    float: left;
+    margin: 15px 0 0 10px;
+  }
+
+  .i-icons-right {
+    float: right;
+    margin: 15px 20px 0 0;
+  }
+}
+
+@media (min-width: 900px) {
+  :root {
+    font-size: 1.55rem;
+  }
+  .navigation{
+    padding: 15px 0;
+    }
+  .mes {
+    width: 95%;
+  }
+  input[type=text] {
+    width: 70%;
+    margin-bottom: 10px;
+  }
+
+  .i-icons {
+    margin: 0 15px;
+  }
+
+  .i-icons-left {
+    float: left;
+    margin: 15px 0 0 10px;
+  }
+
+  .i-icons-right {
+    float: right;
+    margin: 15px 30px 0 0;
+  }
+}
+
+@media (min-width: 1200px) {
+  :root {
+    font-size: 2rem;
+  }
+
+  .navigation{
+  padding: 10px 0;
+  }
+
+  .mes {
+    width: 90%;
+  }
+  .messages {
+    margin-top: 50px;
+    width: 100vw;
+    height: 90vh;
+    padding: 20px 10px;
+    overflow-y: auto;
+  }
+  .nav-left{
+    float: left;
+    margin: 0 40px;
+  }
+
+  input[type=text] {
+    width: 80%;
+    margin: 15px 0;
+  }
+
+  .i-icons {
+    margin: 0 15px;
+  }
+
+  .i-icons-left {
+    float: left;
+    margin: 15px 0 0 30px;
+  }
+
+  .i-icons-right {
+    float: right;
+    margin: 15px 40px 0 0;
+  }
+}
+
+*,
+*:before,
+*:after {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
+
 body {
   display: flex;
   flex-direction: column;
@@ -41,29 +175,22 @@ body {
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
   background: #FFF;
 }
-.messagebox {
+a{
+  text-decoration: none !important;
+}
+a > .nav-right {
+  color: #FFF;
+}
+.navigation {
   background-color: #1877f2;
   width: 100vw;
-  height: 7vh;
-  box-shadow: 0px 1px 0px rgb(0 0 0 / 25%);
+  height: 55px;
   text-align: center;
-  padding: 10px;
   color: #FFF;
   position: fixed;
-  /* top: 0; */
   z-index: 1000;
-  /* position: relative; */
 }
-.messageboxtext {
-  margin-top: auto;
-}
-.messages {
-  margin-top: 50px;
-  width: 100vw;
-  height: 85vh;
-  padding: 20px 10px;
-	overflow-y: auto; 
-}
+
 .textbox {
   position: fixed;
   left: 0;
@@ -73,40 +200,44 @@ body {
   text-align: center;
   background-color: #1877f2;
   min-width: 100vw;
-  min-height: 7vh;
+  min-height: 55px;
 }
-input[type=text]{
+
+input[type=text] {
   position: relative;
   padding: 10px;
   border: none;
   border-radius: 15px;
 }
-.i-send{
+
+.i-send {
   position: relative;
   top: 3px;
   left: -45px;
   color: #8233C5;
 }
-.i-icons{
-  margin: 15px 5px 0 5px;
-}
+
 .bubble {
   overflow: hidden;
   display: inline-block;
   margin: 0 0 .125rem 0;
-  padding: .5rem .85rem;
+  max-width: 99%;
+  padding: .5rem .85rem .5rem .65rem;
   line-height: 1.25rem;
   border-radius: 1.25rem;
   transform-origin: 0 100%;
   vertical-align: middle;
   transition: border-radius .25s ease-out .075s;
 }
+
 .bubble.left.cornered {
   border-bottom-left-radius: 0;
 }
+
 .bubble.left {
-  background: rgba(206,206,206,0.50);
+  background: rgba(206, 206, 206, 0.50);
 }
+
 .bubble:after {
   content: "";
   position: absolute;
@@ -120,25 +251,31 @@ input[type=text]{
   background-repeat: no-repeat;
   transition: background-position .15s ease-in;
 }
+
 .bubble.cornered:after {
   background-position: 0 0;
 }
+
 .bubble span {
   display: block;
 }
+
 .bubble span.message {
   opacity: 0;
 }
+
 .bubble a {
   color: #0076FF;
 }
+
 .bubble .loading {
   position: absolute;
   width: 2.25rem;
   font-size: 2rem;
   line-height: 1rem;
 }
+
 .bubble .loading b {
   display: inline-block;
-  color: rgba(0,0,0,.5);
+  color: rgba(0, 0, 0, .5);
 }
