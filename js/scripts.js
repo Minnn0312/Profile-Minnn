@@ -29,7 +29,7 @@ window.onload = function() {
     'My job is to make the system secure and stability',
     'I have 3 years experience at similar positions',
     'My hobby is research everything about technology',
-    'You can contact me<br><a target="_blank" href="https://github.com/Minnn0312"><i class="fab fa-github-square"></i> Minnn0312</a><br><a target="_blank" href="https://fb.com/dohuythangglcs"><i class="fab fa-facebook"></i> Đỗ Huy Thắng</a><br><a target="_blank" href="mailto:dohuythang00@gmail.com"><i class="fal fa-mail-bulk"></i> dohuythang00</a>',
+    'You can contact me<br><a target="_blank" href="https://github.com/Minnn0312"><i class="fab fa-github-square"></i> Minnn0312</a><br><a target="_blank" href="mailto:dohuythang00@gmail.com"><i class="fal fa-mail-bulk"></i> dohuythang00</a><br><a target="_blank" href="https://linkedin.com/in/đỗ-huy-thắng-066196140"><i class="fab fa-linkedin"></i> Đỗ Huy Thắng</a>',
     getCurrentTime(),
     '👀 Minnn.'
   ]
