@@ -24,8 +24,8 @@ window.onload = function() {
   var messages = [
     'Hey 👋',
     "I'm Minnn 😉",
-    "I'm a Infomation Technology Security Engineer",
-    'Besides that, I also a Programmer, a Cryptography Engineer and a System Engineer',
+    "I'm a Cyber Security Engineer",
+    'Besides that, I also a Programmer, Cryptographer and System Engineer',
     'My job is to make the system secure and stability',
     'I have 3 years experience at similar positions',
     'My hobby is research everything about technology',
