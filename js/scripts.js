@@ -169,7 +169,7 @@ window.onload = function() {
     if (!message) return;
     sendMessage(message);
     ++messageIndex;
-    setTimeout(sendMessages, (message.replace(/<(?:.|\n)*?>/gm, '').length * typingSpeed) + anime.random(1000, 1200));
+    setTimeout(sendMessages, (message.replace(/<(?:.|\n)*?>/gm, '').length * typingSpeed) + anime.random(1000, 1300));
   }
 
   sendMessages();
