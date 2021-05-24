@@ -24,8 +24,8 @@ window.onload = function() {
   var messages = [
     'Hey there 👋',
     "I'm Huy Thang",
-    "I'm a infomation technology security engineer",
-    'Besides that, I also a programmer, a cryptography engineer and a system engineer',
+    "I'm a Infomation Technology Security Engineer",
+    'Besides that, I also a Programmer, a Cryptography Engineer and a System Engineer',
     'My job is to make the system secure and stability',
     'I have 3 years experience at similar positions',
     'My hobby is research everything about technology',
