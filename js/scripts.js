@@ -16,20 +16,20 @@ window.onload = function() {
     var hours =  date.getHours();
     var minutes =  date.getMinutes();
     var current = hours + (minutes * .01);
-    if (current >= 5 && current < 19) return 'Have a nice day';
-    if (current >= 19 && current < 22) return 'Have a nice evening';
-    if (current >= 22 || current < 5) return 'Have a nice sleep';
+    if (current >= 5 && current < 19) return 'Have a nice day 😀';
+    if (current >= 19 && current < 22) return 'Have a nice evening 😇';
+    if (current >= 22 || current < 5) return 'Have a nice sleep 😴';
   }
 
   var messages = [
-    'Hey there 👋',
-    "I'm Minnn",
+    'Hey 👋',
+    "I'm Minnn 😉",
     "I'm a Infomation Technology Security Engineer",
     'Besides that, I also a Programmer, a Cryptography Engineer and a System Engineer',
     'My job is to make the system secure and stability',
     'I have 3 years experience at similar positions',
     'My hobby is research everything about technology',
-    'You can contact me<br><a target="_blank" href="https://github.com/Minnn0312"><i class="fab fa-github-square"></i> Minnn0312</a><br><a target="_blank" href="mailto:dohuythang00@gmail.com"><i class="fal fa-mail-bulk"></i> dohuythang00</a><br><a target="_blank" href="https://linkedin.com/in/đỗ-huy-thắng-066196140"><i class="fab fa-linkedin"></i> Đỗ Huy Thắng</a>',
+    'You can contact me 🤙<br><a target="_blank" href="https://github.com/Minnn0312"><i class="fab fa-github-square"></i> Minnn0312</a><br><a target="_blank" href="mailto:dohuythang00@gmail.com"><i class="fal fa-mail-bulk"></i> Dohuythang00</a><br><a target="_blank" href="https://linkedin.com/in/đỗ-huy-thắng-066196140"><i class="fab fa-linkedin"></i> Đỗ Huy Thắng</a>',
     getCurrentTime(),
     '👀 Minnn.'
   ]
