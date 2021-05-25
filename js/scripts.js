@@ -22,7 +22,7 @@ window.onload = function() {
   }
 
   var messages = [
-    'Hey 👋',
+    'Hi 👋',
     "I'm Minnn 😉",
     "I'm a Cyber Security Engineer",
     'Besides that, I also a Programmer, Cryptographer and System Engineer',
