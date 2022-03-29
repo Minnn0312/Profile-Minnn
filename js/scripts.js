@@ -4,17 +4,17 @@
  * Copyright (c) 2016 Julian Garnier
  */
 
-window.onload = function() {
+window.onload = function () {
 
   var messagesEl = document.querySelector('.messages');
   var typingSpeed = 20;
   var loadingText = '<b>•</b><b>•</b><b>•</b>';
   var messageIndex = 0;
 
-  var getCurrentTime = function() {
+  var getCurrentTime = function () {
     var date = new Date();
-    var hours =  date.getHours();
-    var minutes =  date.getMinutes();
+    var hours = date.getHours();
+    var minutes = date.getMinutes();
     var current = hours + (minutes * .01);
     if (current >= 5 && current < 19) return 'Have a nice day 😀';
     if (current >= 19 && current < 22) return 'Have a nice evening 😇';
@@ -24,9 +24,9 @@ window.onload = function() {
   var messages = [
     'Hi 👋',
     "I'm Minnn 😉",
-    "I'm a Cyber Security Engineer",
-    'Besides that, I also a Programmer, Cryptographer and System Engineer',
-    'My job is to make the system secure and stability',
+    "I'm a DevOps Engineer",
+    'Besides that, I also a Developer, Cryptographer and System Admin',
+    'My job is to make the system secure, stability and scalability',
     'I have 3 years experience at similar positions',
     'My hobby is research everything about technology',
     'You can contact me 🤙<br><a target="_blank" href="https://github.com/Minnn0312"><i class="fab fa-github-square"></i> Minnn0312</a><br><a target="_blank" href="mailto:dohuythang00@gmail.com"><i class="fal fa-mail-bulk"></i> Dohuythang00</a><br><a target="_blank" href="https://linkedin.com/in/minnn0312"><i class="fab fa-linkedin"></i> Đỗ Huy Thắng</a>',
@@ -34,15 +34,15 @@ window.onload = function() {
     '👀 Minnn.'
   ]
 
-  var getFontSize = function() {
+  var getFontSize = function () {
     return parseInt(getComputedStyle(document.body).getPropertyValue('font-size'));
   }
 
-  var pxToRem = function(px) {
+  var pxToRem = function (px) {
     return px / getFontSize() + 'rem';
   }
 
-  var createBubbleElements = function(message, position) {
+  var createBubbleElements = function (message, position) {
     var bubbleEl = document.createElement('div');
     var messageEl = document.createElement('span');
     var loadingEl = document.createElement('span');
@@ -64,7 +64,7 @@ window.onload = function() {
     }
   }
 
-  var getDimentions = function(elements) {
+  var getDimentions = function (elements) {
     return dimensions = {
       loading: {
         w: '4rem',
@@ -81,7 +81,7 @@ window.onload = function() {
     }
   }
 
-  var sendMessage = function(message, position) {
+  var sendMessage = function (message, position) {
     var loadingDuration = (message.replace(/<(?:.|\n)*?>/gm, '').length * typingSpeed) + 500;
     var elements = createBubbleElements(message, position);
     messagesEl.appendChild(elements.bubble);
@@ -131,16 +131,16 @@ window.onload = function() {
       duration: 300,
       loop: true,
       direction: 'alternate',
-      delay: function(i) {return (i * 100) + 50}
+      delay: function (i) { return (i * 100) + 50 }
     });
-    setTimeout(function() {
+    setTimeout(function () {
       loadingLoop.pause();
       dotsPulse.restart({
         opacity: 0,
         scale: 0,
         loop: false,
         direction: 'forwards',
-        update: function(a) {
+        update: function (a) {
           if (a.progress >= 65 && elements.bubble.classList.contains('is-loading')) {
             elements.bubble.classList.remove('is-loading');
             anime({
@@ -153,18 +153,18 @@ window.onload = function() {
       });
       bubbleSize.restart({
         scale: 1,
-        width: [dimensions.loading.w, dimensions.bubble.w ],
-        height: [dimensions.loading.h, dimensions.bubble.h ],
+        width: [dimensions.loading.w, dimensions.bubble.w],
+        height: [dimensions.loading.h, dimensions.bubble.h],
         marginTop: 0,
         marginLeft: 0,
-        begin: function() {
+        begin: function () {
           if (messageIndex < messages.length) elements.bubble.classList.remove('cornered');
         }
       })
     }, loadingDuration - 50);
   }
 
-  var sendMessages = function() {
+  var sendMessages = function () {
     var message = messages[messageIndex];
     if (!message) return;
     sendMessage(message);
