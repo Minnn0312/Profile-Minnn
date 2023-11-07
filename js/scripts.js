@@ -28,7 +28,7 @@ window.onload = function () {
     "My role is to ensure the systems security, stability, scalability and rapid feature development",
     "Additionally, I'm a content creator with TheDevOpsShows where I share valuable insights on DevOps and various technologies",
     "With a deep understanding of tools, technologies, and cloud computing platforms gained from my experience at prominent companies in Vietnam, I am well-equipped to handle complex challenges in the field",
-    "I'm passionate about my work, and I welcome connections with like-minded individuals who share the same enthusiasm"
+    "I'm passionate about my work, and I welcome connections with like-minded individuals who share the same enthusiasm",
     'You can contact me 🤙<br><a target="_blank" href="https://github.com/Minnn0312"><i class="fab fa-github-square"></i> Minnn0312</a><br><a target="_blank" href="mailto:dohuythang00@gmail.com"><i class="fal fa-mail-bulk"></i> Dohuythang00</a><br><a target="_blank" href="https://linkedin.com/in/minnn0312"><i class="fab fa-linkedin"></i> Đỗ Huy Thắng</a>',
     getCurrentTime(),
     '👀 Minnn.'
